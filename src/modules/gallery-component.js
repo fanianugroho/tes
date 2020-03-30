@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import { Layout, Row, Col, Card } from 'antd'; 
+import { Layout, Row, Col, Card, AutoComplete } from 'antd'; 
 import '../assets/css/gallery.css' 
 const { Meta } = Card;
 
@@ -16,7 +16,7 @@ const image6 = require(`../assets/images/jepretan/6.jpeg`);
 class PortofolioComponent extends Component{
     render(){
         return(
-            <Layout className="landing-container-transparant" >
+            <Layout className="landing-container" >
                 <Content style={{ overflow: "hidden" }}> 
                     <Row className="section-container">
                             <Col lg={24}>
@@ -37,7 +37,7 @@ class PortofolioComponent extends Component{
                                 <br/>
                                 <br/>
                                 <br/>
-                            <div className="site-card-wrapper-transparant" style={{ marginLeft: 350 ,marginRight: 350 }}>
+                            <div className="site-card-wrapper-transparant">
                             <Row gutter={50}>
                                 <Col span={90}>
                                 <Card
