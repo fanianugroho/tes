@@ -1,7 +1,7 @@
 {
   "name": "WEB3A-15108-Hani-Fania-REACT",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://fanianugroho.github.io/WEB3A-15108-Hani-Fania-REACT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
