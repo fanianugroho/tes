@@ -1,7 +1,5 @@
 import React, {Component} from 'react'; 
-import PortofolioComponent from '../modules/gallery-component'
-
-
+import GalleryComponent from '../modules/gallery-component'
 
 
 class GalleryPage extends Component {
@@ -33,15 +31,14 @@ class GalleryPage extends Component {
           visible: false,
         });
       };
-    //handleOk dan handleCancel digunakan untuk close modal
-
+   
     render(){
         return (
-            <PortofolioComponent
-                initialData = {this.state} //ini maksudnya membuat varibel initalData yg isinya semua state yang telah dibuat
-                showModal = {this.showModal} //ini maksudnya membuat variabel showmodal yang akan dipanggil, this.showmodal mksdnya itu manggil functin show modal, karena masih satu halaman pakainya this.
-                handleCancel = {this.handleCancel} //sama seperti showmodal
-                handleOk = {this.handleOk} //sama seperti showmodal
+            <GalleryComponent
+                initialData = {this.state} 
+                showModal = {this.showModal} 
+                handleCancel = {this.handleCancel} 
+                handleOk = {this.handleOk}
             />
         );
     }

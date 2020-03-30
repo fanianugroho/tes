@@ -13,7 +13,7 @@ const image6 = require(`../assets/images/jepretan/6.jpeg`);
 
 
 
-class PortofolioComponent extends Component{
+class GalleryComponent extends Component{
     render(){
         return(
             <Layout className="landing-container" >
@@ -109,4 +109,4 @@ class PortofolioComponent extends Component{
     }
 }
 
-export default PortofolioComponent;
+export default GalleryComponent;

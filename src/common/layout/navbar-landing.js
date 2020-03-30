@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
+
 import {
   SmileFilled,
   PhoneFilled ,
@@ -15,7 +16,7 @@ const { SubMenu } = Menu;
 
 class Navbar extends Component {
   state = {
-    current: 'mail',
+    current: 'smiley',
   };
 
   handleClick = e => {
@@ -27,10 +28,11 @@ class Navbar extends Component {
 
   render() {
     return (
-      <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
+      <nav className="menuBar">
+      <Menu mode="horizontal">
         <Menu.Item key="smile">
         <SmileFilled />
-            <Link to="/">About Me</Link> 
+            <Link to="/TES">About Me</Link> 
         </Menu.Item>
         <Menu.Item key="bookfilled">
         <BookFilled />
@@ -66,7 +68,7 @@ class Navbar extends Component {
           </a>
         </Menu.Item>
       </Menu>
-    
+    </nav>
     );
   }
 }
